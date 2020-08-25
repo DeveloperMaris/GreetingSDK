@@ -19,7 +19,7 @@ This is a demo SDK, which have tagged versions:
 
 All versions are available through [CocoaPods](https://cocoapods.org).
 
-1. Specify source repository in `Podfile`:
+1. Specify source repository in  `Podfile`:
 ```
 source 'https://github.com/DeveloperMaris/GreetingCocoaPodsSpecs'
 ```
@@ -44,3 +44,18 @@ Or in case if a user is already on the latest stable version, it would still inf
 
 ![pod outdated](./Screenshots/pod_outdated_2.png)
 *(Screenshot does not show that the versions 1.1.0 and 1.1.0 are colored in red)*
+
+## Installing Beta release
+
+To install the *beta* release, you need to specify a pod with a specific version in `Podfile`, which you want to be installed:
+```
+pod 'GreetingSDK'                   # Will install latest available stable version
+pod 'GreetingSDK', '~> 1.2.0-beta'  # Will install latest available 1.2.0 beta versions 
+                                    # (if there would be 1.2.0-beta.1, 1.2.0-beta.2, etc.)
+```
+## Version naming
+
+[CocoaPods](https://cocoapods.org) framework follows the [Semantic Versioning guidelines](https://semver.org), for example:
+```
+1.0.0 < 1.1.0 < 1.2.0-beta < 1.2.0-beta.2 < 1.2.0-rc.1 < 1.2.0
+```
