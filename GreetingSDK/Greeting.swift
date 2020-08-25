@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Greeting {
-    func greet(_ name: String) {
+public struct Greeting {
+    public func greet(_ name: String) {
         print("Hello \(name)")
     }
 }
