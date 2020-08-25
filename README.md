@@ -33,11 +33,14 @@ By just specifying `pod 'GreetingSDK'` without a specific version, it will autom
 
 ![pod install](./Screenshots/pod_install.png)
 
-Also, if there would be an update available for the SDK, and also a new *beta* release too,  end-user would be inform that there is a *beta* version available, but it would automatically update only to the latest stable version.
+Also, if there would be an update available for the SDK (**1.1.0**), and also a new *beta* release too (**1.2.0-beta**), end-user would be informed that a *beta* version is available, but it would automatically update **only to the latest stable version**.
+
 For the outdated versions user can check using `pod outdated`:
 
 ![pod outdated](./Screenshots/pod_outdated_1.png)
+*(Screenshot does not show that the versions 1.0.1 and 1.1.0 are colored in blue)*
 
-Or in case if user is already on the latest stable version, it would still inform user about a newer version, but not install it:
+Or in case if a user is already on the latest stable version, it would still inform the user about a newer version, but not install it:
 
 ![pod outdated](./Screenshots/pod_outdated_2.png)
+*(Screenshot does not show that the versions 1.1.0 and 1.1.0 are colored in red)*
