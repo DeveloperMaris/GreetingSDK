@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Maris Lagzdins" => "maaris.lagzdins@gmail.com" }
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/DeveloperMaris/cocoapod-sdk-version-changes.git", :tag => "#{spec.version}" }
-  spec.source_files         = "GreetingSDK/**/*.{h,m,swift}"
+  spec.source_files = "GreetingSDK/**/*.{h,m,swift}"
   spec.public_header_files  = "GreetingSDK/**/*.h"
+  spec.swift_versions   = "5"
 end
