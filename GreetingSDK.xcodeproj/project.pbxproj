@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B543105024F4FA1B001C4B97 /* GreetingSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B543104E24F4FA1B001C4B97 /* GreetingSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B543105724F4FA27001C4B97 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543105624F4FA27001C4B97 /* Greeting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B543104B24F4FA1B001C4B97 /* GreetingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreetingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B543104E24F4FA1B001C4B97 /* GreetingSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreetingSDK.h; sourceTree = "<group>"; };
 		B543104F24F4FA1B001C4B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B543105624F4FA27001C4B97 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				B543104E24F4FA1B001C4B97 /* GreetingSDK.h */,
 				B543104F24F4FA1B001C4B97 /* Info.plist */,
+				B543105624F4FA27001C4B97 /* Greeting.swift */,
 			);
 			path = GreetingSDK;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					B543104A24F4FA1B001C4B97 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B543105724F4FA27001C4B97 /* Greeting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		B543105424F4FA1B001C4B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 94EK2XEZUL;
@@ -268,14 +274,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GreetingSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.developermaris.GreetingSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +293,7 @@
 		B543105524F4FA1B001C4B97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 94EK2XEZUL;
@@ -292,11 +302,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GreetingSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.developermaris.GreetingSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
