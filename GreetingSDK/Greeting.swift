@@ -12,4 +12,8 @@ public enum Greeting {
     public static func greet(_ name: String) {
         print("Hello \(name)")
     }
+
+    public static func bye(_ name: String) {
+        print("Bye \(name)")
+    }
 }
