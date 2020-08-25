@@ -50,7 +50,8 @@ Or in case if a user is already on the latest stable version, it would still inf
 You can install a specific SDK version (including the *beta*) by specifying the pod version in the `Podfile`:
 ```
 pod 'GreetingSDK'                   # Will install latest available stable version (1.1.0)
-pod 'GreetingSDK', '~> 1.1.0'       # Will install specifically version 1.1 and any other available patch version (1.1.0)
+pod 'GreetingSDK', '~> 1.1.0'       # Will install specifically version 1.1 and any other 
+                                    # available patch version (1.1.0)
 pod 'GreetingSDK', '~> 1.2.0-beta'  # Will install latest available 1.2.0 beta version (1.2.0-beta)
 ```
 ## Version naming
