@@ -45,13 +45,13 @@ Or in case if a user is already on the latest stable version, it would still inf
 ![pod outdated](./Screenshots/pod_outdated_2.png)
 *(Screenshot does not show that the versions 1.1.0 and 1.1.0 are colored in red)*
 
-## Installing Beta release
+## Install a specific version
 
-To install the *beta* release, you need to specify a pod with a specific version in `Podfile`, which you want to be installed:
+You can install a specific SDK version (including the *beta*) by specifying the pod version in the `Podfile`:
 ```
-pod 'GreetingSDK'                   # Will install latest available stable version
-pod 'GreetingSDK', '~> 1.2.0-beta'  # Will install latest available 1.2.0 beta versions 
-                                    # (if there would be 1.2.0-beta.1, 1.2.0-beta.2, etc.)
+pod 'GreetingSDK'                   # Will install latest available stable version (1.1.0)
+pod 'GreetingSDK', '~> 1.1.0'       # Will install specifically version 1.1 and any other available patch version (1.1.0)
+pod 'GreetingSDK', '~> 1.2.0-beta'  # Will install latest available 1.2.0 beta version (1.2.0-beta)
 ```
 ## Version naming
 
