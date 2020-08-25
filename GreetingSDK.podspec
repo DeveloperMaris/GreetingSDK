@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "GreetingSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "GreetingSDK is a sample SDK for showing how semantic versioning works with CocoaPods"
   spec.description  = "GreetingSDK is a sample SDK for showing how semantic versioning works with CocoaPods."
   spec.homepage     = "https://github.com/DeveloperMaris/cocoapod-sdk-version-changes"
